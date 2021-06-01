@@ -1,6 +1,3 @@
-from os import read
-from urllib.request import HTTPDigestAuthHandler
-from pandas.io import excel
 import tabula as tb
 import pandas as pd
 import streamlit as st
