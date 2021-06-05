@@ -4,7 +4,7 @@ import streamlit as st
 import io
 import base64
 
-st.title("csv_reader")
+st.title("pdf_reader")
 
 uploaded_file = st.file_uploader("Choose an PDF file...", type="pdf")
 
