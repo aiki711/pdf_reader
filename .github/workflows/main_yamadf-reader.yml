@@ -52,5 +52,5 @@ jobs:
       with:
         app-name: 'yamadf-reader'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_e354f89f177f44a7b1f65578ac026d9d }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_602f53c9d9ce4d6c85c9724c0880c6f6 }}
         package: .
