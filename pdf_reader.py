@@ -26,9 +26,8 @@ if uploaded_file is not None:
 st.write("下にあるような1ページのPDFファイルを ’Browse files’ をクリックしてアップロードします。")
 image01 = Image.open('sample01.jpg')
 st.image(image01, caption='example of PDF')
-st.write("""
-Excelファイルがダウンロードできるようになります。
-ダウンロードすると、下のようなExcelファイルが開けます。
-""")
+st.write("Excelファイルがダウンロードできるようになります。")
+
+st.write("ダウンロードすると、下のようなExcelファイルが開けます。")
 image02 = Image.open('sample02.jpg')
 st.image(image02, caption='example of excel')
