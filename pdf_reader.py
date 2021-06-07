@@ -4,6 +4,7 @@ import pandas as pd
 import streamlit as st
 import io
 import base64
+from PIL import Image
 
 st.title("pdf_reader")
 
@@ -19,3 +20,12 @@ if uploaded_file is not None:
     b64 = base64.b64encode(towrite.read()).decode()
     linko = f'<a href="data:application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;base64,{b64}" download="myfilename.xlsx">Download excel file</a>'
     st.markdown(linko, unsafe_allow_html=True)
+    
+    st.balloons()
+
+st.write("下にあるような1ページのPDFファイルを ’Browse files’ をクリックしてアップロードします。")
+image01 = Image.open('sample01.jpg')
+st.image(image01, caption='example of PDF')
+st.write("Excelファイルがダウンロードできるようになります。ダウンロードすると、下のようなExcelファイルが開けます。")
+image02 = Image.open('sample02.jpg')
+st.image(image02, caption='example of excel')
