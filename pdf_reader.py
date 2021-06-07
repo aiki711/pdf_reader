@@ -6,7 +6,7 @@ import io
 import base64
 from PIL import Image
 
-st.title("pdf_reader")
+st.title("PDFから表をExcelに抽出します")
 
 uploaded_file = st.file_uploader("Choose an PDF file...", type="pdf")
 
